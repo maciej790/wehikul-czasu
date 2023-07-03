@@ -1,0 +1,20 @@
+backend:
+  name: git-gateway
+  repo: maciej790/wehikul-czasu
+  branch: main
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "content/posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Tytuł artykułu", name: "title", widget: "string" }
+      - { label: "Obraz miniaturka", name: "thumbnail", widget: "image" }
+      - { label: "Data publikacji", name: "date", widget: "date" }
+      - { label: "Czas czytania", name: "time", widget: "number" }
+      - { label: "Body", name: "tags", widget: "list" }
