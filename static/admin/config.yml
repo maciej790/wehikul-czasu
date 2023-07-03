@@ -17,5 +17,5 @@ collections:
       - { label: "Obraz miniaturka", name: "thumbnail", widget: "image" }
       - { label: "Data publikacji", name: "date", widget: "date" }
       - { label: "Czas czytania", name: "time", widget: "number" }
-      - { label: "Body", name: "tags", widget: "list" }
+      - { label: "Kategoria", name: "tags", widget: "list" }
       - { label: "Body", name: "body", widget: "markdown" }
