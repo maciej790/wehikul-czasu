@@ -34,7 +34,7 @@ const props = defineProps({
 
 const imageStyle = computed(() => {
   return {
-    background: `url('${props.post.thumbnail.src}')`,
+    background: `url('${props.post.thumbnail}')`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
@@ -50,6 +50,7 @@ const imageStyle = computed(() => {
   min-height: 300px;
   position: relative;
   transition: transform 0.5s ease-out;
+  border-radius: 10px;
 
   .card__category {
     width: 180px;
