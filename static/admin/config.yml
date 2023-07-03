@@ -18,3 +18,4 @@ collections:
       - { label: "Data publikacji", name: "date", widget: "date" }
       - { label: "Czas czytania", name: "time", widget: "number" }
       - { label: "Body", name: "tags", widget: "list" }
+      - { label: "Body", name: "body", widget: "markdown" }
