@@ -21,7 +21,7 @@
 </template>
 
 <script setup>
-import PostCard from "../../../../wehikul-czasu-blog/src/components/PostCard/PostCard.vue";
+import PostCard from "../PostCard/PostCard.vue";
 import ClockAndTime from "../ClockAndTime/ClockAndTime.vue";
 import Button from "../Button/Button.vue";
 import { computed } from "vue";
