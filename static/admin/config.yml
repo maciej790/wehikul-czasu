@@ -22,7 +22,6 @@ collections:
         }
       - { label: "Data publikacji", name: "date", widget: "date" }
       - { label: "Czas czytania", name: "time", widget: "number" }
-      - { label: "Kategoria", name: "tags", widget: "list" }
       - {
           label: "Kategoria",
           name: "tags",
