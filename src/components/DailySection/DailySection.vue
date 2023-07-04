@@ -13,7 +13,7 @@
         <p>{{ props.data.tags[0].title }}</p>
       </div>
       <div class="bottom__sentence">
-        <p v-html="firstSentences"></p>
+        <div v-html="firstSentences"></div>
       </div>
       <Button title="Czytaj dalej" :link="props.data.path" />
     </div>
