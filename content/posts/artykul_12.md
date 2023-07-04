@@ -1,8 +1,8 @@
 ---
-  title: Testowy artykuł5
+  title: Testowy artykuł12
   thumbnail: /uploads/test.jpg
-  date: 2023-06-18T00:00:00
-  time: 9
+  date: 2015-02-16T00:00:00
+  time: 10
   tags:
 	-II Wojna Światowa
   ---
