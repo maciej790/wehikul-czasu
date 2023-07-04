@@ -14,7 +14,12 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Tytuł artykułu", name: "title", widget: "string" }
-      - { label: "Obraz miniaturka", name: "thumbnail", widget: "image" }
+      - {
+          label: "Obraz miniaturka",
+          name: "thumbnail",
+          widget: "image",
+          date_format: YYYY-MM-DDTHH:mm,
+        }
       - { label: "Data publikacji", name: "date", widget: "date" }
       - { label: "Czas czytania", name: "time", widget: "number" }
       - { label: "Kategoria", name: "tags", widget: "list" }
