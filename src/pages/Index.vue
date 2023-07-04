@@ -58,8 +58,7 @@ import Button from "../components/Button/Button.vue";
         node {
           id
           title
-          date
-          description
+          date(format: "YYYY-MM-DD")
           time
           thumbnail
           path
@@ -76,8 +75,7 @@ import Button from "../components/Button/Button.vue";
         node {
           id
           title
-          date
-          description
+          date(format: "YYYY-MM-DD")
           time
           thumbnail
           path
@@ -94,8 +92,7 @@ import Button from "../components/Button/Button.vue";
         node {
           id
           title
-          date
-          description
+          date(format: "YYYY-MM-DD")
           time
           thumbnail
           content
@@ -113,8 +110,7 @@ import Button from "../components/Button/Button.vue";
         node {
           id
           title
-          date
-          description
+          date(format: "YYYY-MM-DD")
           time
           thumbnail
           path
