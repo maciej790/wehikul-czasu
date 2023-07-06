@@ -136,12 +136,12 @@ import Button from "../components/Button/Button.vue";
 
   @media only screen and (min-width: $desktop) {
     font-size: 1rem;
-    width: 85%;
+    width: 80%;
   }
 
   @media only screen and (min-width: $high-desktop) {
     font-size: 1rem;
-    width: 70%;
+    width: 65%;
   }
 
   .recent {

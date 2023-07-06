@@ -122,7 +122,7 @@ const isMenuOpen = ref(false);
         text-align: right;
         font-size: 1.7rem;
         width: 50%;
-        margin: 0 1rem 0 0;
+        margin: 0 3rem 0 0;
       }
 
       .red {
