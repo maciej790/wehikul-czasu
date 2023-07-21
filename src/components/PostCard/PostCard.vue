@@ -1,6 +1,6 @@
 <template>
   <article class="card" :style="imageStyle">
-    <div class="card__category">
+    <div class="card__category" v-if="!props.isDaily">
       <p>{{ props.post.tags[0].title }}</p>
     </div>
     <div class="card__belt" v-if="!props.isDaily">
@@ -13,8 +13,6 @@
       <div class="belt__bottom"></div>
     </div>
   </article>
-
-  <!-- <g-link class="post-card__link" :to="post.path"></g-link> -->
 </template>
 
 <script setup>
@@ -78,8 +76,6 @@ const imageStyle = computed(() => {
     .belt__top {
       width: 100%;
       padding: 10px;
-      display: flex;
-      flex-direction: column;
       height: 100%;
       justify-content: space-between;
 

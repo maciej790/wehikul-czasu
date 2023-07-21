@@ -171,7 +171,6 @@ import Button from "../components/Button/Button.vue";
 
         .recent__card {
           .card__belt {
-            min-height: 150px;
           }
         }
 
@@ -185,7 +184,7 @@ import Button from "../components/Button/Button.vue";
         .recent__card {
           .top__title {
             width: 65%;
-            margin: 0;
+            margin: 0 0 30px 0;
           }
         }
       }

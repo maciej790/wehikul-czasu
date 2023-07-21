@@ -22,11 +22,11 @@ defineProps({
   align-items: center;
   justify-content: flex-start;
   text-transform: uppercase;
-  margin: 45px 0 45px 0;
-  font-size: 0.7rem;
+  margin: 100px 0 45px 0;
+  font-size: 0.9rem;
 
   @media only screen and (min-width: $desktop) {
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin: 60px 0 60px 0;
   }
 
@@ -37,5 +37,9 @@ defineProps({
     border-radius: 100px;
     margin: 0 1rem 0 0;
   }
+}
+
+.title:nth-of-type(1) {
+  margin: 60px 0 45px 0;
 }
 </style>

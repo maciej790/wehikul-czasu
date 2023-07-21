@@ -7,3 +7,5 @@ tags:
   - II Wojna Światowa
 ---
 x﻿xx
+
+![](/uploads/test.jpg)
