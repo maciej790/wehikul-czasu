@@ -46,4 +46,4 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Name", name: "category", widget: "string" }
+      - { label: "Name", name: "name", widget: "string" }
