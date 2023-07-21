@@ -43,8 +43,9 @@ collections:
           name: "category",
           widget: "relation",
           collection: "categories",
-          searchFields: ["title"],
+          searchFields: ["id, title"],
           displayFields: ["title"],
+          valueField: 'id',
           valueField: "title",
         }
 
