@@ -34,7 +34,8 @@ collections:
           name: "category",
           widget: "relation",
           collection: "categories",
-          value_field: "name",
+          searchFields: ["name"],
+          valueField: "name",
         }
 
       - { label: "Body", name: "body", widget: "markdown" }
