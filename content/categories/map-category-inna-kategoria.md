@@ -1,0 +1,3 @@
+---
+category: inna kategoria
+---
