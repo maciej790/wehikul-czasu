@@ -12,6 +12,11 @@ module.exports = {
       options: {
         path: 'content/categories/**/*.md',
         typeName: 'Category',
+        refs: {
+          posts: {
+            typeName: 'Post',
+          },
+        },
         remark: {
           //Config options can be added here
         }
@@ -24,7 +29,9 @@ module.exports = {
         path: 'content/posts/**/*.md',
         typeName: 'Post',
         refs: {
-          category: 'Category'
+          category:{
+            typeName: 'Category',
+          },
         },
         remark: {
           //Config options can be added here
