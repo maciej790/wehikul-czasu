@@ -35,6 +35,7 @@ collections:
           widget: "relation",
           collection: "categories",
           searchFields: ["name"],
+          displayFields: ["name"],
           valueField: "name",
         }
 
@@ -45,5 +46,6 @@ collections:
     folder: "content/categories"
     create: true
     slug: "{{slug}}"
+    identifier_field: "name"
     fields:
       - { label: "Name", name: "name", widget: "string" }

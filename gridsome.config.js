@@ -10,6 +10,17 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
+        path: 'content/categories/**/*.md',
+        typeName: 'Category',
+        remark: {
+          //Config options can be added here
+        }
+      }
+    },
+
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
         path: 'content/posts/**/*.md',
         typeName: 'Post',
         refs: {
@@ -20,17 +31,6 @@ module.exports = {
         }
       }
     },
-
-    {
-      use: '@gridsome/source-filesystem',
-      options: {
-        path: 'content/categories/**/*.md',
-        typeName: 'Category',
-        remark: {
-          //Config options can be added here
-        }
-      }
-    }
   ],
 
   transformers: {
