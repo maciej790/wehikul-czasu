@@ -13,11 +13,19 @@ module.exports = {
         path: 'content/posts/**/*.md',
         typeName: 'Post',
         refs: {
-          tags: {
-            typeName: 'Tag',
-            create: true,
-          },
+          category: 'Category'
         },
+        remark: {
+          //Config options can be added here
+        }
+      }
+    },
+
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'content/categories/**/*.md',
+        typeName: 'Category',
         remark: {
           //Config options can be added here
         }

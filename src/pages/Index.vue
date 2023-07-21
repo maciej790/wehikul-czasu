@@ -62,10 +62,7 @@ import Button from "../components/Button/Button.vue";
           time
           thumbnail
           path
-          tags {
-            id
-            title
-          }
+         
         }
       }
     }
@@ -79,10 +76,7 @@ import Button from "../components/Button/Button.vue";
           time
           thumbnail
           path
-          tags {
-            id
-            title
-          }
+          
         }
       }
     }
@@ -97,10 +91,7 @@ import Button from "../components/Button/Button.vue";
           thumbnail
           content
           path
-          tags {
-            id
-            title
-          }
+          
         }
       }
     }
@@ -114,10 +105,7 @@ import Button from "../components/Button/Button.vue";
           time
           thumbnail
           path
-          tags {
-            id
-            title
-          }
+         
         }
       }
     }
