@@ -1,3 +1,0 @@
----
-name: nowa kategoria
----
