@@ -62,7 +62,6 @@ import ClockAndTime from "../components/ClockAndTime/ClockAndTime.vue";
 
     .article__image {
       width: 100%;
-      border-radius: 10px;
 
       @media only screen and (min-width: $desktop) {
         height: 450px;
