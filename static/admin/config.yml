@@ -44,5 +44,6 @@ collections:
     label: "Categories"
     folder: "content/categories"
     create: true
+    slug: "{{slug}}"
     fields:
       - { label: "Name", name: "name", widget: "string" }
