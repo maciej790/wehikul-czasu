@@ -2,7 +2,13 @@
   <nav class="nav">
     <ul class="nav__menu" v-for="(item, index) in menuItems" :key="index">
       <li class="menu__link">
-        <g-link class="link__tag" :to="item.path">{{ item.label }}</g-link>
+        <g-link
+          class="link__tag"
+          :to="item.path"
+          active-class="active"
+          exact-active-class="exact-active"
+          >{{ item.label }}</g-link
+        >
       </li>
     </ul>
   </nav>
@@ -65,6 +71,7 @@ const menuItems = ref([
       align-items: center;
       justify-content: center;
       margin: 1rem 0 1rem 0;
+      text-align: center;
 
       .link__tag {
         color: $white-color;
@@ -75,10 +82,16 @@ const menuItems = ref([
         @media only screen and (min-width: $desktop) {
           text-decoration: none;
           font-size: 1rem;
+          margin: 0;
+          padding: 0;
         }
       }
 
       .active {
+        color: $white-color;
+      }
+
+      .exact-active {
         color: $red-main-color;
       }
 
