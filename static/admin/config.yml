@@ -39,6 +39,6 @@ collections:
     slug: "{{slug}}"
     identifier_field: "name"
     fields:
-      - { label: "UUID", name: "uuid", widget: uuid }
+      - { label: ID, name: id, widget: ncw-id, prefix: cat }
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Profile", name: "profile", widget: "markdown" }
