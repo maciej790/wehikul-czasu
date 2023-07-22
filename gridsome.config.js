@@ -24,7 +24,6 @@ module.exports = {
         path: 'content/posts/**/*.md',
         typeName: 'Post',
         refs: {
-          id: 'title',
           category: 'Category',
         },
         remark: {
