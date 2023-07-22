@@ -1,5 +1,5 @@
 import CMS from "netlify-cms"
-import uuid from 'uuid/v4';
+import uuid from 'uuid'
 
 /**
  * Create the control widget, this will add a form element to the cms UI
