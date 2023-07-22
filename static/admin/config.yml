@@ -13,6 +13,7 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
+      - { label: "ID", name: "id", widget: "id" }
       - { label: "Tytuł artykułu", name: "title", widget: "string" }
       - {
           label: "Obraz miniaturka",
@@ -22,37 +23,22 @@ collections:
         }
       - { label: "Data publikacji", name: "date", widget: "date" }
       - { label: "Czas czytania", name: "time", widget: "number" }
-      # - {
-      #     label: "Kategoria",
-      #     name: "tags",
-      #     widget: "list",
-      #     summary: "{{fields.tag}}",
-      #     field: { label: "Tag", name: "tag", widget: "string" },
-      #   }
-      # - {
-      #     label: "Category",
-      #     name: "category",
-      #     widget: "relation",
-      #     collection: "categories",
-      #     searchFields: ["id, title"],
-      #     valueField: "id",
-      #     displayFields: ["title"],
-      #   }
-      - {
-          label: "Category",
-          name: "category",
-          widget: "relation",
-          collection: "categories",
-          searchFields: ["title"],
-          displayFields: ["title"],
-        }
-
       - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Category"
+        name: "category"
+        widget: "relation"
+        collection: "categories"
+        searchFields: ["name"]
+        displayFields: ["name"]
+        valueField: "name"
 
   - name: "categories"
     label: "Categories"
     folder: "content/categories"
     create: true
     slug: "{{slug}}"
+    identifier_field: "name"
     fields:
-      - { label: "Name", name: "title", widget: "string" }
+      - { label: "ID", name: "id", widget: "id" }
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Profile", name: "profile", widget: "markdown" }
