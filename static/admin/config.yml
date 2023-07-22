@@ -14,7 +14,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "ID", name: "id", widget: "string" }
-      - { label: "Tytuł artykułu", name: "title", widget: "string" }
+      - { label: "Tytuł artykułu", name: "name", widget: "string" }
       - {
           label: "Obraz miniaturka",
           name: "thumbnail",
