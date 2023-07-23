@@ -35,7 +35,7 @@ module.exports = {
       use: `netlify-cms-app`,
       options: {
         publicPath: `/admin`,
-        modulePath: `static/admin/index.js` // This is important and allows us to register our own widget
+        modulePath: `src/admin/index.js` // This is important and allows us to register our own widget
       }
     },
   ],
