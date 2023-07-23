@@ -1,5 +1,8 @@
-import CMS from "netlify-cms"
+import CMS from 'netlify-cms-app'
 import uuid from 'uuid/v4';
+// Initialize the CMS object
+CMS.init()
+// Now the registry is available via the CMS object.
 
 /**
  * Create the control widget, this will add a form element to the cms UI
