@@ -32,7 +32,7 @@ module.exports = {
       }
     },
     {
-      use: `gridsome-plugin-netlify-cms`,
+      use: `netlify-cms-app`,
       options: {
         publicPath: `/admin`,
         modulePath: `src/admin/index.js` // This is important and allows us to register our own widget
