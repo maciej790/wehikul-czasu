@@ -26,11 +26,11 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
       - label: "Category"
         name: "category"
-        widget: ncw-file-relation
-        collection: categories
-        target_field: categories
-        id_field: id
-        display_fields: name
+        widget: "ncw-file-relation"
+        collection: "categories"
+        target_field: "categories"
+        id_field: "id"
+        display_fields: "name"
 
   - name: "categories"
     label: "Categories"
