@@ -8226,6 +8226,13 @@ netlify-cms-widget-text@^2.4.1:
   dependencies:
     react-textarea-autosize "^8.0.0"
 
+netlify-cms-widget-uuid-v4@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.npmjs.org/netlify-cms-widget-uuid-v4/-/netlify-cms-widget-uuid-v4-1.1.1.tgz"
+  integrity sha512-LeoXQG57jMnhNu2CYsfekPVByn3it2Iut4AZnEZ2XKp1bZBN5Qj29JMFgw8KygCJVvFJ1+KwiNFXIKrUQn1BZQ==
+  dependencies:
+    prop-types "^15.6.1"
+
 netlify-cms@^2, netlify-cms@^2.10.192:
   version "2.10.192"
   resolved "https://registry.npmjs.org/netlify-cms/-/netlify-cms-2.10.192.tgz"
@@ -10020,7 +10027,7 @@ react-window@^1.8.5:
     "@babel/runtime" "^7.0.0"
     memoize-one ">=3.1.1 <6"
 
-react@*, "react@^0.14.0 || ^15.0.0 || ^16 || ^17 || ^18", "react@^0.14.0 || ^15.0.0-0 || ^15.4.0-0 || ^16.0.0-0", "react@^15.0.0 || ^16.0.0", "react@^15.0.0 || ^16.0.0 || ^17.0.0", "react@^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^15.3.0 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^15.3.0 || ^16.0.0-alpha || ^17.0.0 || ^18.0.0-rc", react@^16.0.0-0, react@^16.11.0, react@^16.14.0, "react@^16.3.0 || ^17.0.0", "react@^16.5.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.8.3 || ^17 || ^18", react@^16.8.4, "react@^16.8.4 || ^17.0.0", react@^16.8.6, "react@>= 16.14", "react@>= 16.3", react@>=15, "react@>=15.5 <=16.x", react@>=16, react@>=16.0.0, react@>=16.3.0, react@>=16.6.0, react@>=16.8.0, "react@0.14.x || 15.x || 16.x || 17.x":
+react@*, "react@^0.14.0 || ^15.0.0 || ^16 || ^17 || ^18", "react@^0.14.0 || ^15.0.0-0 || ^15.4.0-0 || ^16.0.0-0", "react@^15.0.0 || ^16.0.0", "react@^15.0.0 || ^16.0.0 || ^17.0.0", "react@^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^15.3.0 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^15.3.0 || ^16.0.0-alpha || ^17.0.0 || ^18.0.0-rc", react@^16, react@^16.0.0-0, react@^16.11.0, react@^16.14.0, "react@^16.3.0 || ^17.0.0", "react@^16.5.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.8.3 || ^17 || ^18", react@^16.8.4, "react@^16.8.4 || ^17.0.0", react@^16.8.6, "react@>= 16.14", "react@>= 16.3", react@>=15, "react@>=15.5 <=16.x", react@>=16, react@>=16.0.0, react@>=16.3.0, react@>=16.6.0, react@>=16.8.0, "react@0.14.x || 15.x || 16.x || 17.x":
   version "16.14.0"
   resolved "https://registry.npmjs.org/react/-/react-16.14.0.tgz"
   integrity sha512-0X2CImDkJGApiAlcf0ODKIneSwBPhqJawOa5wCtKbu7ZECrmS26NvtSILynQ66cgkT/RJ4LidJOc3bUESwmU8g==

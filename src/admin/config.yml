@@ -13,7 +13,7 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: ID, name: id, widget: ncw-id }
+      - { label: "ID", name: "id", widget: "uuid" }
       - { label: "Tytuł artykułu", name: "title", widget: "string" }
       - {
           label: "Obraz miniaturka",
@@ -26,11 +26,11 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
       - label: "Category"
         name: "category"
-        widget: "ncw-file-relation"
+        widget: "relation"
         collection: "categories"
-        target_field: "categories"
-        id_field: "id"
-        display_fields: "name"
+        searchFields: ["name"]
+        displayFields: ["name"]
+        valueField: "name"
 
   - name: "categories"
     label: "Categories"
@@ -39,6 +39,6 @@ collections:
     slug: "{{slug}}"
     identifier_field: "name"
     fields:
-      - { label: ID, name: id, widget: ncw-id }
+      - { label: "ID", name: "id", widget: "uuid" }
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Profile", name: "profile", widget: "markdown" }

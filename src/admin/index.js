@@ -1,6 +1,5 @@
 import CMS from 'netlify-cms'
 
-import { Widget as IdWidget } from '@ncwidgets/id'
+import { UuidControl, UuidPreview } from 'netlify-cms-widget-uuid-v4'
 
-CMS.registerWidget(IdWidget)
-CMS.init()
+CMS.registerWidget('uuid', UuidControl)
