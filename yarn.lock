@@ -3473,7 +3473,7 @@ create-hmac@^1.1.0, create-hmac@^1.1.4, create-hmac@^1.1.7:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-create-react-class@^15.5.1, create-react-class@^15.6.3:
+create-react-class@^15.5.1, create-react-class@^15.6.3, create-react-class@^15.7.0:
   version "15.7.0"
   resolved "https://registry.npmjs.org/create-react-class/-/create-react-class-15.7.0.tgz"
   integrity sha512-QZv4sFWG9S5RUvkTYWbflxeZX+JG7Cz0Tn33rQBJ+WFQTqTfUTjMjiv9tnfXazjsO5r0KhPs+AqCjyrQX6h2ng==
@@ -4364,7 +4364,7 @@ escape-goat@^2.0.0:
   resolved "https://registry.npmjs.org/escape-goat/-/escape-goat-2.1.1.tgz"
   integrity sha512-8/uIhbG12Csjy2JEW7D9pHbreaVaS/OpN3ycnyvElTdwM5n6GY6W6e2IPemfvGZeUMqZ9A/3GqIZMgKnBhAw/Q==
 
-escape-html@~1.0.3:
+escape-html@^1.0.3, escape-html@~1.0.3:
   version "1.0.3"
   resolved "https://registry.npmjs.org/escape-html/-/escape-html-1.0.3.tgz"
   integrity sha512-NiSupZ4OeuGwr68lGIeym/ksIZMJodUGOSCZ/FSnTxcrekbvqrgdUxlJOMpijaKZVjAJrWrGs/6Jy8OMuyj9ow==
@@ -6674,6 +6674,11 @@ jest-worker@24.0.0:
     merge-stream "^1.0.1"
     supports-color "^6.1.0"
 
+jquery@^3.6.0:
+  version "3.7.0"
+  resolved "https://registry.npmjs.org/jquery/-/jquery-3.7.0.tgz"
+  integrity sha512-umpJ0/k8X0MvD1ds0P9SfowREz2LenHsQaxSohMZ5OMNEU2r0tf8pdeEFTHMFxWVxKNyU9rTtK3CWzUCTKJUeQ==
+
 js-base64@^3.0.0:
   version "3.7.5"
   resolved "https://registry.npmjs.org/js-base64/-/js-base64-3.7.5.tgz"
@@ -7961,6 +7966,19 @@ netlify-cms-locales@^1.39.0:
   resolved "https://registry.npmjs.org/netlify-cms-locales/-/netlify-cms-locales-1.39.0.tgz"
   integrity sha512-79MhSw588IEMtd0SLObSIiTC0cv7krYqJOtYnapPwJcUYZ87nFz/le9v/KvJglb5OxmpvlNLRyGvbyK5Er4v4w==
 
+netlify-cms-media-library-cloudinary@^1.3.10:
+  version "1.3.10"
+  resolved "https://registry.npmjs.org/netlify-cms-media-library-cloudinary/-/netlify-cms-media-library-cloudinary-1.3.10.tgz"
+  integrity sha512-F9ccWD4+3uEYoGHaO+abqBDfhITw3MA2Tsz1LwtVxdp8ExMCrZxhLrR1VPetUlOLe5BxuZD+WOA3cvRnj3rRwA==
+
+netlify-cms-media-library-uploadcare@^0.5.10:
+  version "0.5.10"
+  resolved "https://registry.npmjs.org/netlify-cms-media-library-uploadcare/-/netlify-cms-media-library-uploadcare-0.5.10.tgz"
+  integrity sha512-jAkxWepjRkQujuLM2z2ix+njSdiQxzzabmVXegpPH6ZLVGNepYVvjAsHMMpFCJAb1EPbdHuEn69ajsJDq+52CQ==
+  dependencies:
+    uploadcare-widget "^3.7.0"
+    uploadcare-widget-tab-effects "^1.4.0"
+
 netlify-cms-ui-default@^2.12.1, netlify-cms-ui-default@^2.15.5:
   version "2.15.5"
   resolved "https://registry.npmjs.org/netlify-cms-ui-default/-/netlify-cms-ui-default-2.15.5.tgz"
@@ -8103,6 +8121,19 @@ netlify-cms-widget-text@^2.4.1:
   integrity sha512-fFuHtID0GfjFwugEyQmHld2nKFe8p42NnvXsayneldcl1YL2jIOk1oastJV1sRx1FB7BIyj1WzJWoaWXNMWwng==
   dependencies:
     react-textarea-autosize "^8.0.0"
+
+netlify-cms@^2.10.192:
+  version "2.10.192"
+  resolved "https://registry.npmjs.org/netlify-cms/-/netlify-cms-2.10.192.tgz"
+  integrity sha512-Bh0MH4w4rELSswBi+insLfKgHd80Jx43bhyZiMU9j1aCv+WEQqw9ZNu/0cqitCZP72VDyI5OSn8112DaZd5bYQ==
+  dependencies:
+    codemirror "^5.46.0"
+    create-react-class "^15.7.0"
+    netlify-cms-app "^2.15.72"
+    netlify-cms-media-library-cloudinary "^1.3.10"
+    netlify-cms-media-library-uploadcare "^0.5.10"
+    react "^16.8.4"
+    react-dom "^16.8.4"
 
 next-tick@^1.0.0:
   version "1.1.0"
@@ -12092,6 +12123,19 @@ update-notifier@^4.1.0:
     pupa "^2.0.1"
     semver-diff "^3.1.1"
     xdg-basedir "^4.0.0"
+
+uploadcare-widget-tab-effects@^1.4.0:
+  version "1.7.2"
+  resolved "https://registry.npmjs.org/uploadcare-widget-tab-effects/-/uploadcare-widget-tab-effects-1.7.2.tgz"
+  integrity sha512-56IxhR5TueGRv9ZUReAZTycV4iWBZ421L1KlMGpK7kCJs/vyQMDY+iQTr3WLtEUmq2Jl9v6H6EA471s3jjpGYQ==
+
+uploadcare-widget@^3.7.0, uploadcare-widget@3.x:
+  version "3.21.2"
+  resolved "https://registry.npmjs.org/uploadcare-widget/-/uploadcare-widget-3.21.2.tgz"
+  integrity sha512-vJ5lS9dKQFMgU9pg+SehcA+iGiGLnhtlok8rY3qVZN9gSo35m4mtt8kRwJuyh/SxJr3g/5wy12sLYeA/qLVoJA==
+  dependencies:
+    escape-html "^1.0.3"
+    jquery "^3.6.0"
 
 upper-case@^1.1.1:
   version "1.1.3"
