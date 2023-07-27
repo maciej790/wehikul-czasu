@@ -21,7 +21,7 @@ module.exports = {
         typeName: 'Post',
         refs: {
           refs: { 
-            author: 'Category', 
+            category: 'Category', 
           } 
         },
         remark: {
