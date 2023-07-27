@@ -20,9 +20,7 @@ module.exports = {
         path: 'content/posts/**/*.md',
         typeName: 'Post',
         refs: {
-          refs: { 
             category: 'Category', 
-          } 
         },
         remark: {
           //Config options can be added here
