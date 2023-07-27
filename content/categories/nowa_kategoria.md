@@ -1,3 +1,0 @@
----
-tag: Nowa_kategoria
----
