@@ -41,4 +41,3 @@ collections:
     fields:
       - { label: "ID", name: "id", widget: "uuid" }
       - { label: "Name", name: "name", widget: "string" }
-      - { label: "Profile", name: "profile", widget: "markdown" }
