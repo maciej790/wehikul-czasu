@@ -7,17 +7,22 @@
 module.exports = {
   siteName: 'Gridsome',
   plugins: [
+    { 
+      use: '@gridsome/source-filesystem',
+      options: { 
+        path: 'content/categories/**/*.md',
+        typeName: 'Category',
+      } 
+    },
     {
       use: '@gridsome/source-filesystem',
       options: {
         path: 'content/posts/**/*.md',
         typeName: 'Post',
         refs: {
-          // Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
-          tags: {
-            typeName: 'Tag',
-            create: true
-          }
+          refs: { 
+            author: 'Category', 
+          } 
         },
         remark: {
           //Config options can be added here
@@ -35,7 +40,12 @@ module.exports = {
 
   transformers: {
     remark: {
-      //Config options can be added here
+      externalLinksTarget: '_blank',
+      externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
+      anchorClassName: 'icon icon-link',
+      plugins: [
+        // ...global plugins
+      ]
     }
   }
 }

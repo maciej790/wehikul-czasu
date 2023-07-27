@@ -13,6 +13,7 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
+      - { label: "ID", name: "id", widget: "id" }
       - { label: "Tytuł artykułu", name: "title", widget: "string" }
       - {
           label: "Obraz miniaturka",
@@ -23,7 +24,20 @@ collections:
       - { label: "Data publikacji", name: "date", widget: "date" }
       - { label: "Czas czytania", name: "time", widget: "number" }
       - { label: "Body", name: "body", widget: "markdown" }
-      - label: "Tags"
-        name: "tags"
-        widget: "list"
-        field: { label: Name, name: name, widget: string, default: "tag" }
+      - label: "Category"
+        name: "category"
+        widget: "relation"
+        collection: "categories"
+        searchFields: ["tag"]
+        displayFields: ["tag"]
+        valueField: "tag"
+
+  - name: "categories"
+    label: "Categories"
+    folder: "content/categories"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: "tag"
+    fields:
+      - { label: "ID", name: "id", widget: "id" }
+      - { label: "Tag", name: "tag", widget: "string" }
