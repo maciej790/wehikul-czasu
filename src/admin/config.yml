@@ -28,16 +28,16 @@ collections:
         name: "category"
         widget: "relation"
         collection: "categories"
-        searchFields: ["tag"]
-        displayFields: ["tag"]
-        valueField: "tag"
+        searchFields: ["name"]
+        displayFields: ["name"]
+        valueField: "name"
 
   - name: "categories"
     label: "Categories"
     folder: "content/categories"
     create: true
     slug: "{{slug}}"
-    identifier_field: "tag"
+    identifier_field: "name"
     fields:
       - { label: "ID", name: "id", widget: "number" }
-      - { label: "Tag", name: "tag", widget: "string" }
+      - { label: "Name", name: "name", widget: "string" }

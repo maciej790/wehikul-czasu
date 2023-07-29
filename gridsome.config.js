@@ -19,6 +19,7 @@ module.exports = {
       options: {
         path: 'content/posts/**/*.md',
         typeName: 'Post',
+        route: '/post/:year/:month/:day/:slug',
         refs: {
             category: 'Category', 
         },
