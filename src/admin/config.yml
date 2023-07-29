@@ -13,7 +13,7 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "ID", name: "id", widget: "id" }
+      - { label: "ID", name: "id", widget: "number" }
       - { label: "Tytuł artykułu", name: "title", widget: "string" }
       - {
           label: "Obraz miniaturka",
@@ -39,5 +39,5 @@ collections:
     slug: "{{slug}}"
     identifier_field: "tag"
     fields:
-      - { label: "ID", name: "id", widget: "id" }
+      - { label: "ID", name: "id", widget: "number" }
       - { label: "Tag", name: "tag", widget: "string" }
