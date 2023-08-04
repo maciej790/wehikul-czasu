@@ -7,30 +7,37 @@ media_folder: "static/uploads"
 public_folder: "/uploads"
 
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "content/blog"
+  - name: "posts"
+    label: "Posts"
+    folder: "content/posts"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
     fields:
-      - { label: "ID", name: "id", widget: "id" }
-      - { label: "Title", name: "title", widget: "string" }
+      - { label: "ID", name: "id", widget: "number" }
+      - { label: "Tytuł artykułu", name: "title", widget: "string" }
+      - {
+          label: "Obraz miniaturka",
+          name: "thumbnail",
+          widget: "image",
+          date_format: YYYY-MM-DDTHH:mm,
+        }
+      - { label: "Data publikacji", name: "date", widget: "date" }
+      - { label: "Czas czytania", name: "time", widget: "number" }
       - { label: "Body", name: "body", widget: "markdown" }
-      - label: "Author"
-        name: "author"
+      - label: "Category"
+        name: "category"
         widget: "relation"
-        collection: "authors"
+        collection: "categories"
         searchFields: ["name"]
         displayFields: ["name"]
         valueField: "name"
 
-  - name: "authors"
-    label: "Authors"
-    folder: "content/authors"
+  - name: "categories"
+    label: "Categories"
+    folder: "content/categories"
     create: true
     slug: "{{slug}}"
     identifier_field: "name"
     fields:
-      - { label: "ID", name: "id", widget: "id" }
+      - { label: "ID", name: "id", widget: "number" }
       - { label: "Name", name: "name", widget: "string" }
-      - { label: "Profile", name: "profile", widget: "markdown" }
