@@ -14,7 +14,7 @@
 
 <page-query>
     query ($id: ID!) {
-      post(id: $id) {
+      blog(id: $id) {
         title
         date(format: "YYYY-MM-DD")
         time

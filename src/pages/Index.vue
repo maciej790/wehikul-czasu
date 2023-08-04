@@ -53,7 +53,7 @@ import Button from "../components/Button/Button.vue";
 
 <page-query>
   query  {
-    recent: allPost(sortBy: "date", order: DESC, limit: 3) {
+    recent: allBlog(sortBy: "date", order: DESC, limit: 3) {
       edges {
         node {
           id
@@ -67,7 +67,7 @@ import Button from "../components/Button/Button.vue";
       }
     }
 
-    other: allPost(sortBy: "date", order: DESC, skip: 3, limit: 12) {
+    other: allBlog(sortBy: "date", order: DESC, skip: 3, limit: 12) {
       edges {
         node {
           id
@@ -81,7 +81,7 @@ import Button from "../components/Button/Button.vue";
       }
     }
   
-    daily: allPost(sortBy: "date", order: DESC, limit: 1) {
+    daily: allBlog(sortBy: "date", order: DESC, limit: 1) {
       edges {
         node {
           id
@@ -96,7 +96,7 @@ import Button from "../components/Button/Button.vue";
       }
     }
   
-    secondWar: allPost(filter: {tags: {contains: ["II Wojna Światowa"]}} limit: 4) {
+    secondWar: allBlog(filter: {tags: {contains: ["II Wojna Światowa"]}} limit: 4) {
       edges {
         node {
           id
