@@ -28,8 +28,8 @@ collections:
         name: "author"
         widget: "relation"
         collection: "authors"
-        searchFields: ["id, name"]
-        displayFields: ["id, name"]
+        searchFields: ["id"]
+        displayFields: ["name"]
         valueField: "name"
 
   - name: "authors"
