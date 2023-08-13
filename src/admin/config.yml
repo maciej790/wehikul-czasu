@@ -13,7 +13,13 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "UUID", name: "uuid", widget: uuid }
+      - label: ID
+        name: id
+        widget: ncw-id
+        prefix: post # will generate post-124hfkjas
+        timestamp: true # will generate 1245119112-post-124hfkjas
+        hint: This widget generate an unique read-only id
+
       - { label: "Tytuł artykułu", name: "title", widget: "string" }
       - {
           label: "Obraz miniaturka",
@@ -39,6 +45,12 @@ collections:
     slug: "{{slug}}"
     identifier_field: "name"
     fields:
-      - { label: "UUID", name: "uuid", widget: uuid }
+      - label: ID
+        name: id
+        widget: ncw-id
+        prefix: author # will generate post-124hfkjas
+        timestamp: true # will generate 1245119112-post-124hfkjas
+        hint: This widget generate an unique read-only id
+
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Profile", name: "profile", widget: "markdown" }
