@@ -28,8 +28,8 @@ collections:
         name: "author"
         widget: "relation"
         collection: "authors"
-        searchFields: ["name"]
-        displayFields: ["name"]
+        searchFields: ["id, name"]
+        displayFields: ["id, name"]
         valueField: "name"
 
   - name: "authors"
@@ -37,7 +37,7 @@ collections:
     folder: "content/authors"
     create: true
     slug: "{{slug}}"
-    identifier_field: "id"
+    identifier_field: "name"
     fields:
       - { label: "ID", name: "id", widget: "id" }
       - { label: "Name", name: "name", widget: "string" }
