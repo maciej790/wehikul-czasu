@@ -10,22 +10,19 @@ module.exports = {
     { 
       use: '@gridsome/source-filesystem',
       options: { 
-        path: 'content/categories/**/*.md',
-        typeName: 'Category',
+        path: 'content/authors/*.md',
+        typeName: 'Author',
       } 
     },
-    {
+    { 
       use: '@gridsome/source-filesystem',
-      options: {
-        path: 'content/posts/**/*.md',
-        typeName: 'Post',
-        refs: {
-            category: 'Category', 
-        },
-        remark: {
-          //Config options can be added here
-        }
-      }
+      options: { 
+        path: 'content/blog/*.md',
+        typeName: 'BlogPost',
+        refs: { 
+          author: 'Author', 
+        } 
+      } 
     },
     {
       use: `gridsome-plugin-netlify-cms`,
