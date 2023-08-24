@@ -1,12 +1,12 @@
 <template>
   <layout>
     <section class="post">
-      <h1 class="post__title">{{ $page.post.title }}</h1>
-      <ClockAndTime :data="$page.post" />
+      <h1 class="post__title">{{ $page.blogPost.title }}</h1>
+      <ClockAndTime :data="$page.blogPost" />
       <div class="post__belt"></div>
       <article class="post__article">
-        <img :src="$page.post.thumbnail" class="article__image" />
-        <div class="article__content" v-html="$page.post.content"></div>
+        <img :src="$page.blogPost.thumbnail" class="article__image" />
+        <div class="article__content" v-html="$page.blogPost.content"></div>
       </article>
     </section>
   </layout>
@@ -14,7 +14,7 @@
 
 <page-query>
     query ($id: ID!) {
-      post(id: $id) {
+      blogPost(id: $id) {
         title
         date(format: "YYYY-MM-DD")
         time
