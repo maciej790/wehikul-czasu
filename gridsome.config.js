@@ -10,8 +10,8 @@ module.exports = {
     { 
       use: '@gridsome/source-filesystem',
       options: { 
-        path: 'content/authors/*.md',
-        typeName: 'Author',
+        path: 'content/categories/*.md',
+        typeName: 'Category',
       } 
     },
     { 
@@ -20,7 +20,7 @@ module.exports = {
         path: 'content/blog/*.md',
         typeName: 'BlogPost',
         refs: { 
-          author: 'Author', 
+          category: 'Category', 
         } 
       } 
     },
