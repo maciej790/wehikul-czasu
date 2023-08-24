@@ -8,7 +8,7 @@
   <body>
     <script>
       import CMS from "netlify-cms";
-      import uuid from "uuid/v4";
+      import { v4 as uuidv4 } from "uuid";
 
       /**
        * Create the control widget, this will add a form element to the cms UI
@@ -20,11 +20,11 @@
         componentDidMount: function() {
           // If this widget doesn't have an ID yet we create one using the UUID package
           if (!this.props.value) {
-            this.props.onChange(uuid());
+            this.props.onChange(uuidv4());
           }
         },
         handleChange() {
-          this.props.onChange(uuid());
+          this.props.onChange(uuidv4());
         },
         render: function() {
           return window.h("p", null, `${this.props.value}`);
