@@ -32,8 +32,8 @@ collections:
         displayFields: ["name"]
         valueField: "id"
 
-  - name: "authors"
-    label: "Authors"
+  - name: "categories"
+    label: "Categories"
     folder: "content/categories"
     create: true
     slug: "{{slug}}"
