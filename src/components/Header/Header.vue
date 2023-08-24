@@ -14,7 +14,7 @@
         :isMenuOpen="isMenuOpen"
       />
       <h2 class="header__motto">
-        Zwyciężcy piszą <span class="red">Historię</span> na nowo
+        Zwycięzcy piszą <span class="red">Historię</span> na nowo
       </h2>
       <Navigate />
     </div>
