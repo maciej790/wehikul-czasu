@@ -62,7 +62,9 @@ import Button from "../components/Button/Button.vue";
           time
           thumbnail
           path
-         
+          category{
+            name
+          }         
         }
       }
     }
@@ -76,7 +78,9 @@ import Button from "../components/Button/Button.vue";
           time
           thumbnail
           path
-          
+          category{
+            name
+          }
         }
       }
     }
@@ -91,25 +95,33 @@ import Button from "../components/Button/Button.vue";
           thumbnail
           content
           path
-          
+          category{
+            name
+          }
         }
       }
     }
   
-    secondWar: allBlogPost(filter: {tags: {contains: ["II Wojna Światowa"]}} limit: 4) {
-      edges {
-        node {
-          id
+    secondWar: allBlogPost(sortBy: "date", order: DESC, limit: 4 filter: { category: { id: { eq: "75871d7c-9e6f-4d1d-8513-1fcc860708f4" } } }) {
+    edges {
+      node {
+ 					id
           title
           date(format: "YYYY-MM-DD")
           time
           thumbnail
           path
-         
-        }
+          category{
+            name
+          }
       }
     }
   }
+
+
+  
+}
+  
 
 
   

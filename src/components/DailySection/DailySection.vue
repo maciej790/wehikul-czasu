@@ -10,7 +10,7 @@
       <ClockAndTime :data="data" />
       <div class="bottom__space" style="margin: 0 0 40px 0"></div>
       <div class="card__category">
-        <!-- <p>{{ props.data.tags[0].title }}</p> -->
+        <p>{{ props.data.category.name }}</p>
       </div>
       <div class="bottom__sentence">
         <div v-html="firstSentences"></div>

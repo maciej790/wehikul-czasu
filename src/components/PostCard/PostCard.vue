@@ -1,7 +1,7 @@
 <template>
   <article class="card" :style="imageStyle">
     <div class="card__category" v-if="!props.isDaily">
-      <!-- <p>{{ props.post.tags[0].title }}</p> -->
+      <p>{{ props.post.category.name }}</p>
     </div>
     <div class="card__belt" v-if="!props.isDaily">
       <div class="belt__top">

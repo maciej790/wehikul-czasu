@@ -1,8 +1,10 @@
-
-id: 6d96d08a-777e-43aa-9d03-fdaa77fdbbda
+---
+id: 3817074e-8313-462e-b71b-34b27028ae5d
 title: testowy artykuł 6
 thumbnail: /uploads/test.jpg
-date: 2023-07-29T13:00
-time: 13
+date: 2023-08-10T13:20
+time: 59
+category: 75871d7c-9e6f-4d1d-8513-1fcc860708f4
+---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...
