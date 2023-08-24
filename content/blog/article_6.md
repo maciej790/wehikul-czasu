@@ -4,7 +4,7 @@ title: testowy artykuł 6
 thumbnail: /uploads/test.jpg
 date: 2023-08-10T13:20
 time: 59
-category: 75871d7c-9e6f-4d1d-8513-1fcc860708f4
+category: f3031e65-3008-4ae5-bdb0-cf1ebc4660f8
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...
