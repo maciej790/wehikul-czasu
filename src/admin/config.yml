@@ -13,6 +13,7 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
+      - { label: "UUID", name: "uuid", widget: uuid }
       - { label: "Tytuł artykułu", name: "title", widget: "string" }
       - {
           label: "Obraz miniaturka",
@@ -27,7 +28,7 @@ collections:
         name: "author"
         widget: "relation"
         collection: "authors"
-        searchFields: ["name"]
+        searchFields: ["id"]
         displayFields: ["name"]
         valueField: "name"
 
@@ -38,5 +39,6 @@ collections:
     slug: "{{slug}}"
     identifier_field: "name"
     fields:
+      - { label: "UUID", name: "uuid", widget: uuid }
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Profile", name: "profile", widget: "markdown" }
