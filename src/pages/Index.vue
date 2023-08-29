@@ -1,7 +1,6 @@
 <template>
   <Layout>
     <main class="posts">
-      <h1>TEST</h1>
       <SectionTitle title="Najnowsze artykuły" />
       <section class="recent">
         <g-link
