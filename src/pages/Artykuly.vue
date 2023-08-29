@@ -13,7 +13,7 @@
             :class="{ active: activeIndex === -1 }"
             @click="() => handleFilterCategory('', -1)"
           >
-            Wszystko
+            Wszystkie
           </li>
           <li
             :class="['categories__item', { active: activeIndex === index }]"
