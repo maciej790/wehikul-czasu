@@ -12,7 +12,6 @@
           <PostCard class="recent__card" :post="edge.node" />
         </g-link>
       </section>
-
       <SectionTitle title="Artykuł dnia" />
       <DailySection :data="$page.daily.edges[0].node" />
       <SectionTitle title="II Wojna Światowa - Najnowsze" />
@@ -122,12 +121,7 @@ import Button from "../components/Button/Button.vue";
   
 }
   
-
-
-  
-
-
-  </page-query>
+</page-query>
 
 <style lang="scss">
 @import "~/assets/styles/_variables.scss";

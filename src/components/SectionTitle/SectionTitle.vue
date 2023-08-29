@@ -22,12 +22,12 @@ defineProps({
   align-items: center;
   justify-content: flex-start;
   text-transform: uppercase;
-  margin: 100px 0 45px 0;
+  margin: 80px 0 45px 0;
   font-size: 0.9rem;
 
   @media only screen and (min-width: $desktop) {
     font-size: 1rem;
-    margin: 60px 0 60px 0;
+    margin: 40px 0 60px 0;
   }
 
   .title__dot {
