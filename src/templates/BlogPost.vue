@@ -1,6 +1,7 @@
 <template>
   <layout>
     <section class="post">
+      <GoBackButton />
       <h1 class="post__title">{{ $page.blogPost.title }}</h1>
       <ClockAndTime :data="$page.blogPost" />
       <div class="post__belt"></div>
@@ -26,6 +27,7 @@
 
 <script setup>
 import ClockAndTime from "../components/ClockAndTime/ClockAndTime.vue";
+import GoBackButton from "../components/GoBackButton/GoBackButton.vue";
 </script>
 
 <style lang="scss">
