@@ -1,6 +1,7 @@
 <template>
   <layout>
     <div class="articles">
+      <GoBackButton />
       <nav class="articles__navigate">
         <div class="navigate__title">
           <img src="../assets/icons/loupe.png" alt="szukaj" />
@@ -9,14 +10,13 @@
         <ul class="navigate__categories">
           <li
             class="categories__item"
-            :class="{ active: activeIndex === index || activeIndex === '' }"
-            @click="() => handleFilterCategory('', index)"
+            :class="{ active: activeIndex === -1 }"
+            @click="() => handleFilterCategory('', -1)"
           >
             Wszystko
           </li>
           <li
-            class="categories__item"
-            :class="{ active: activeIndex === index }"
+            :class="['categories__item', { active: activeIndex === index }]"
             v-for="(category, index) in $page.categories.edges"
             :key="category.node.id"
             @click="() => handleFilterCategory(category.node.id, index)"
@@ -54,9 +54,10 @@
 
 <script setup>
 import PostCard from "../components/PostCard/PostCard.vue";
+import GoBackButton from "../components/GoBackButton/GoBackButton.vue";
 import { ref } from "vue";
 const filtredCategory = ref("");
-const activeIndex = ref("");
+const activeIndex = ref(-1);
 
 const handleFilterCategory = (cat, index) => {
   filtredCategory.value = cat;
