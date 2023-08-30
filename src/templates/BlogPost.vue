@@ -4,6 +4,7 @@
       <GoBackButton />
       <h1 class="post__title">{{ $page.blogPost.title }}</h1>
       <ClockAndTime :data="$page.blogPost" />
+      <div class="post__category">{{ $page.blogPost.category.name }}</div>
       <div class="post__belt"></div>
       <article class="post__article">
         <img :src="$page.blogPost.thumbnail" class="article__image" />
@@ -21,6 +22,9 @@
         time
         thumbnail
         content
+        category{
+          name
+        }
       }
     }
 </page-query>
@@ -50,6 +54,17 @@ import GoBackButton from "../components/GoBackButton/GoBackButton.vue";
     font-size: 2rem;
     text-align: left;
     margin: 0 0 30px 0;
+  }
+
+  .post__category {
+    width: 180px;
+    min-height: 30px;
+    background: $red-main-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    margin: 1rem 0 0 0;
   }
 
   .post__belt {

@@ -25,14 +25,17 @@ const handleButtonClick = () => {
   position: fixed;
   border: none;
   outline: none;
-  left: 20px;
+  position: fixed;
   bottom: 20px;
+  right: 20px;
   z-index: 999;
   transition: transform 0.2s ease-in-out;
 
   @media only screen and (min-width: $desktop) {
     width: 45px;
     height: 45px;
+    bottom: 20px;
+    left: 20px;
   }
 
   .back__img {

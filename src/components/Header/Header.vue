@@ -38,7 +38,7 @@ const isMenuOpen = ref(false);
   position: sticky;
   top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 1000;
   background: $bg-color;
 
   @media only screen and (min-width: $desktop) {
