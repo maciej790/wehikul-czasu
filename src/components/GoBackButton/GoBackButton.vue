@@ -31,8 +31,8 @@ const handleButtonClick = () => {
   transition: transform 0.2s ease-in-out;
 
   @media only screen and (min-width: $desktop) {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
   }
 
   .back__img {

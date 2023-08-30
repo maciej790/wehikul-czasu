@@ -77,6 +77,12 @@ import GoBackButton from "../components/GoBackButton/GoBackButton.vue";
       line-height: 155%;
       text-align: left;
 
+      img {
+        width: 100%;
+        height: 100%;
+        margin: 1rem 0 1rem 0;
+      }
+
       @media only screen and (min-width: $desktop) {
         font-size: 1.2rem;
       }
