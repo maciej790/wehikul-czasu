@@ -10,7 +10,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce finibus blandit e
 
 Suspendisse porttitor venenatis est sed pharetra. Mauris ac condimentum orci. Sed diam enim, aliquet sed velit non, tincidunt pharetra felis. Fusce tellus mauris, faucibus ac mauris a, tempor convallis risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque in massa velit. Nulla nec dolor et elit congue tempor et interdum lacus. Curabitur porta interdum velit egestas tempor. Vestibulum eget est odio. Curabitur ac urna tristique, maximus dui in, facilisis enim. Nam imperdiet id magna sed mollis. Pellentesque sodales eu ligula vel ornare. Vivamus at lectus eu neque pulvinar volutpat.
 
-![](/uploads/r.jpg)
+![](/uploads/vodka-1515544_640.jpg)
 
 Nulla leo nisl, venenatis sed nulla eu, mattis iaculis augue. Donec malesuada ut augue eu ullamcorper. Sed eget commodo tellus. Maecenas ac sodales magna, nec mattis mauris. Nunc et tincidunt eros. Nullam felis felis, eleifend id sem in, mollis sodales odio. Donec vitae porttitor metus. In arcu nisl, cursus sit amet felis eu, bibendum aliquam purus. Duis eu risus eget lorem tristique ornare et eget magna. Proin suscipit aliquet massa, ac ultrices urna sagittis ut. Nullam scelerisque scelerisque ipsum eget tempus. Fusce tristique risus ut pharetra consequat. Aliquam ac porta ligula, in scelerisque urna. Morbi semper nunc a erat commodo lobortis.
 
